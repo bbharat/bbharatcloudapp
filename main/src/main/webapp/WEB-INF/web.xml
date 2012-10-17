@@ -42,4 +42,16 @@
         <servlet-name>rest</servlet-name>
         <url-pattern>/rest/*</url-pattern>
     </servlet-mapping>
+
+    <jsp-config>
+       <jsp-property-group>
+           <url-pattern>*.jsp</url-pattern>
+           <scripting-invalid>true</scripting-invalid>
+       </jsp-property-group>
+   </jsp-config>
+
+   <welcome-file-list>
+       <welcome-file>home.jsp</welcome-file>
+   </welcome-file-list>
+
 </web-app>

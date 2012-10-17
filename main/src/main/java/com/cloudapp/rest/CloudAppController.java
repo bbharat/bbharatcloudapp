@@ -28,6 +28,14 @@ public class CloudAppController {
     /**
      * get a user by key
      */
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public String showHomePage() {
+        return "home";
+    }
+
+    /**
+     * get a user by key
+     */
     @RequestMapping(value = "/users/{userKey}", method = RequestMethod.GET)
     @ResponseBody
     public UserDetails getConferenceDetails(HttpServletResponse response,
